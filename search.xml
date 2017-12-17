@@ -31,11 +31,11 @@
     <entry>
       <title><![CDATA[FUN CHAT 聊天室]]></title>
       <url>/2017/09/17/chat/</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="开头"><a href="#开头" class="headerlink" title="开头"></a>开头</h2><p>这次因为一些话题，我和ruby谈着谈着他说他做了一个除蔷薇花园以外的聊天室，当时我还是蛮高兴的，就让他搭建在我服务器中，于是就成就了 [ FUN CHAT ]</p>
+      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><h2 id="开头"><a href="#开头" class="headerlink" title="开头"></a>开头</h2><p>这次因为一些话题，我和ruby谈着谈着他说他做了一个除蔷薇花园以外的聊天室，当时我还是蛮高兴的，就让他搭建在我服务器中，于是就成就了 [ FUN CHAT ]</p>
 <h2 id="开发进度"><a href="#开发进度" class="headerlink" title="开发进度"></a>开发进度</h2><p>目前的话还只是在实验状态，很多地方还有bug以及不稳定的地方，如果当你出现了bug类似的状态可以mail到i@kilin.moe</p>
 <h3 id="已实现的"><a href="#已实现的" class="headerlink" title="已实现的"></a>已实现的</h3><p>1、聊天<br>2、大部分的聊天应有的功能</p>
 <h3 id="未实现的"><a href="#未实现的" class="headerlink" title="未实现的"></a>未实现的</h3><p>1、点歌</p>
-<h3 id="网页预览"><a href="#网页预览" class="headerlink" title="网页预览"></a>网页预览</h3><p>Link: <a href="https://kilin.moe/c">https://kilin.moe/c</a></p>
+<h3 id="网页预览"><a href="#网页预览" class="headerlink" title="网页预览"></a>网页预览</h3><p>Link: （因托管至Github，现维护中……）</p>
 ]]></content>
       
         <categories>
@@ -67,12 +67,10 @@
     <entry>
       <title><![CDATA[一言 API]]></title>
       <url>/2017/09/09/api/</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h2><p></p><p id="hitokoto"></p><p></p>
+      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><h2 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h2><p></p><p id="hitokoto"></p><p></p>
 <h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>简单来说这个api的作用就是提供一句话服务。<br>我这个api主要是提供一些在动漫里和小说里我觉得好的东西。<br>句子一直都会反复筛选的，毕竟我也是一个有点强迫症的人</p>
-<h2 id="Api"><a href="#Api" class="headerlink" title="Api"></a>Api</h2><p>HTTP:<a href="http://api.kilin.moe/" target="_blank" rel="external">http://api.kilin.moe/</a><br>SSL（推荐）:<a href="https://kilin.moe/api/">https://kilin.moe/api/</a><br>SSL（备用）:<a href="https://savegirls.club/" target="_blank" rel="external">https://savegirls.club/</a></p>
+<h2 id="Api"><a href="#Api" class="headerlink" title="Api"></a>Api</h2><p><a href="https://hitokoto.kilin.moe/" target="_blank" rel="external">https://hitokoto.kilin.moe/</a></p>
 <h2 id="返回"><a href="#返回" class="headerlink" title="返回"></a>返回</h2><p>返回参数名称（描述）<br>word（本体，一句话）<br>author（作者）<br>source（出处）<br>type（类别）</p>
-<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><p><a href="http://api.kilin.moe/get" target="_blank" rel="external">http://api.kilin.moe/get</a> （目前从仅有的两个分类抽取）</p>
-<h2 id="返回示例"><a href="#返回示例" class="headerlink" title="返回示例"></a>返回示例</h2><p><a href="http://api.kilin.moe/get" target="_blank" rel="external">http://api.kilin.moe/get</a></p>
 ]]></content>
       
         <categories>
