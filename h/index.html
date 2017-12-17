@@ -1,0 +1,307 @@
+
+<html>
+<head>
+<title>HITOKOTO | 靥</title>
+<link rel="icon shortcut" type="image/ico" href="https://i.loli.net/2017/09/17/59bd667eb2523.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+<style>
+body {
+  margin: 0;
+}
+
+* {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-backface-visibility: visible;
+          backface-visibility: visible;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  background: url("https://i.loli.net/2017/09/28/59cbe32289ea4.jpg");
+  background-size:cover;
+  overflow: hidden;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body > div {
+  position: relative;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+body > div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  z-index: 2;
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+  cursor: pointer;
+  color: transparent;
+}
+body > div a:hover, body > div a:focus {
+  -webkit-transform: translateZ(20px);
+          transform: translateZ(20px);
+}
+body > div a:hover ~ div span, body > div a:focus ~ div span {
+  -webkit-transform: translateZ(20px);
+          transform: translateZ(20px);
+}
+body > div a:active {
+  outline: none;
+}
+body > div a:active ~ div {
+  background: rgba(56,57,55,0.75)
+}
+
+body > div a:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+body > div a:nth-child(1):after {
+  content: "1";
+}
+body > div a:nth-child(1):hover ~ div, body > div a:nth-child(1):focus ~ div {
+  -webkit-transform-origin: right bottom;
+          transform-origin: right bottom;
+  -webkit-transform: rotateX(5deg) rotateY(-5deg) translateZ(0);
+          transform: rotateX(5deg) rotateY(-5deg) translateZ(0);
+}
+body > div a:nth-child(2) {
+  top: 0;
+  left: calc(100% / 3);
+}
+body > div a:nth-child(2):after {
+  content: "2";
+}
+body > div a:nth-child(2):hover ~ div, body > div a:nth-child(2):focus ~ div {
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+  -webkit-transform: rotateX(5deg) translateZ(0);
+          transform: rotateX(5deg) translateZ(0);
+}
+body > div a:nth-child(3) {
+  top: 0;
+  right: 0;
+}
+body > div a:nth-child(3):after {
+  content: "3";
+}
+body > div a:nth-child(3):hover ~ div, body > div a:nth-child(3):focus ~ div {
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  -webkit-transform: rotateX(5deg) rotateY(5deg) translateZ(0);
+          transform: rotateX(5deg) rotateY(5deg) translateZ(0);
+}
+body > div a:nth-child(4) {
+  top: calc(100% / 3);
+  left: 0;
+}
+body > div a:nth-child(4):after {
+  content: "4";
+}
+body > div a:nth-child(4):hover ~ div, body > div a:nth-child(4):focus ~ div {
+  -webkit-transform-origin: right center;
+          transform-origin: right center;
+  -webkit-transform: rotateY(-5deg) translateZ(0);
+          transform: rotateY(-5deg) translateZ(0);
+}
+body > div a:nth-child(5), body > div a:nth-child(6), body > div a:nth-child(7), body > div a:nth-child(8) {
+  width: calc(100% / 6);
+  height: calc(100% / 6);
+}
+body > div a:nth-child(5) {
+  top: calc(100% / 3);
+  left: calc(100% / 3);
+}
+body > div a:nth-child(5):after {
+  content: "5";
+}
+body > div a:nth-child(5):hover ~ div, body > div a:nth-child(5):focus ~ div {
+  -webkit-transform-origin: right bottom;
+          transform-origin: right bottom;
+  -webkit-transform: rotateX(2.5deg) rotateY(-2.5deg) translateZ(0);
+          transform: rotateX(2.5deg) rotateY(-2.5deg) translateZ(0);
+}
+body > div a:nth-child(6) {
+  top: calc(100% / 3);
+  left: calc(100% / 6 * 3);
+}
+body > div a:nth-child(6):after {
+  content: "6";
+}
+body > div a:nth-child(6):hover ~ div, body > div a:nth-child(6):focus ~ div {
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  -webkit-transform: rotateX(2.5deg) rotateY(2.5deg) translateZ(0);
+          transform: rotateX(2.5deg) rotateY(2.5deg) translateZ(0);
+}
+body > div a:nth-child(7) {
+  top: calc(100% / 6 * 3);
+  left: calc(100% / 3);
+}
+body > div a:nth-child(7):after {
+  content: "7";
+}
+body > div a:nth-child(7):hover ~ div, body > div a:nth-child(7):focus ~ div {
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  -webkit-transform: rotateX(-2.5deg) rotateY(-2.5deg) translateZ(0);
+          transform: rotateX(-2.5deg) rotateY(-2.5deg) translateZ(0);
+}
+body > div a:nth-child(8) {
+  top: calc(100% / 6 * 3);
+  left: calc(100% / 6 * 3);
+}
+body > div a:nth-child(8):after {
+  content: "8";
+}
+body > div a:nth-child(8):hover ~ div, body > div a:nth-child(8):focus ~ div {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: rotateX(-2.5deg) rotateY(2.5deg) translateZ(0);
+          transform: rotateX(-2.5deg) rotateY(2.5deg) translateZ(0);
+}
+body > div a:nth-child(9) {
+  top: calc(100% / 3);
+  right: 0;
+}
+body > div a:nth-child(9):after {
+  content: "9";
+}
+body > div a:nth-child(9):hover ~ div, body > div a:nth-child(9):focus ~ div {
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  -webkit-transform: rotateY(5deg) translateZ(0);
+          transform: rotateY(5deg) translateZ(0);
+}
+body > div a:nth-child(10) {
+  bottom: 0;
+  left: 0;
+}
+body > div a:nth-child(10):after {
+  content: "10";
+}
+body > div a:nth-child(10):hover ~ div, body > div a:nth-child(10):focus ~ div {
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  -webkit-transform: rotateX(-5deg) rotateY(-5deg) translateZ(0);
+          transform: rotateX(-5deg) rotateY(-5deg) translateZ(0);
+}
+body > div a:nth-child(11) {
+  bottom: 0;
+  left: calc(100% / 3);
+}
+body > div a:nth-child(11):after {
+  content: "11";
+}
+body > div a:nth-child(11):hover ~ div, body > div a:nth-child(11):focus ~ div {
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+  -webkit-transform: rotateX(-5deg) translateZ(0);
+          transform: rotateX(-5deg) translateZ(0);
+}
+body > div a:nth-child(12) {
+  bottom: 0;
+  right: 0;
+}
+body > div a:nth-child(12):after {
+  content: "12";
+}
+body > div a:nth-child(12):hover ~ div, body > div a:nth-child(12):focus ~ div {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: rotateX(-5deg) rotateY(5deg) translateZ(0);
+          transform: rotateX(-5deg) rotateY(5deg) translateZ(0);
+}
+body > div div {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 360px;
+  height: 256px;
+  background: rgba(0,0,0,0.75);
+  border-radius: 2px;
+  padding: 12px;
+}
+body > div div span {
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: calc(100% - 24px);
+  height: calc(100% - 24px);
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  border-radius: 2px;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+}
+</style></head><body>
+<div id="box" ontouchstart="">
+  <a></a>
+  <a></a>
+  <a></a>
+  <a></a>
+  <a></a>
+  <a></a>
+  <a></a>
+  <a></a>
+  <a></a>
+  <a></a>
+  <a></a>
+  <a></a>
+  <div>
+    <span id="hitokoto" style="color: rgba(255,255,255,0.75);line-height: 50px;">
+	</span>
+  </div>
+</div>
+<script>
+var ajax = new XMLHttpRequest();  ajax.open('GET', 'https://kilin.moe/api/');
+ajax.onreadystatechange = function() {
+        if (ajax.readyState == 4) {
+                     if (ajax.status == 200) {
+                                      var result = JSON.parse(ajax.responseText);
+  document.getElementById('hitokoto').innerHTML='<p style="text-align: left;">'+result.word+'</p>'+' <p style="text-align: right;">— '+result.author+'《'+result.source+'》</p>';
+// document.write('句子:'+result.word+'<br>作者:'+result.author+'<br>出处:'+result.source+'<br>类别:'+result.type);
+}}};ajax.send();
+var box=document.getElementById('box');
+var background=['https://img.cdn.lwl12.com/images/2017/09/26/d88J.jpg','https://img.cdn.lwl12.com/images/2017/09/26/d88J.jpg'];//这里加你的壁纸 ,'','' 这种格式
+setInterval(function(){box.style.backgroundImage='url('+background[Math.round(Math.rand()*background.length-1)]+')';},30000);
+</script>
+</body></html>

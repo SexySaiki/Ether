@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FUN CHAT | 靥</title>
+	<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=utf-8">
+    <meta name="theme-color" content="#000">
+    <link rel="icon shortcut" type="image/png" href="https://i.loli.net/2017/09/16/59bd4908dc448.png">
+    <link rel="icon" sizes="192x192" href="https://i.loli.net/2017/09/16/59bd4908dc448.png">
+    <link rel="apple-touch-icon" href="https://i.loli.net/2017/09/16/59bd4908dc448.png">
+	<style type="text/css">
+	#exit,.bottomBar>input{background:transparent;margin:0;height:32px;border-radius:0px;text-align:center !important;}
+	#exit{position:relative;top:-1px;}
+		input,button{text-align: center;background-color: rgba(255,255,255,0.1);color: #aaa;border-radius:2px;border: 0px;height:16px;}
+		button{padding:0px 20px;cursor: pointer;transition:opacity 0.5s linear;}
+		button:hover{opacity:0.7;}
+		button:active{opacity:0.2;}
+		input{padding:2px 4px;}
+		*{margin: 5px;text-shadow:0px 0px 20px;text-shadow:unset;font-weight:200 !important;text-align:left !important;outline:none}
+		.msgBox{
+			position: relative;margin-bottom: 40px;margin-left: 10px;height: 100px;
+		}
+		.msgBoxChild{background: rgba(0,0,0,0.2);height:100%;margin:0px;float:left;min-width: 532px;box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);border-radius:4px;}
+		.avatar{border-radius: 5px 0px 0px 5px;
+			float: left;
+			max-width: 100px;
+			max-height: 100px;margin: 0px;margin-left: 0px;margin-right: 10px;
+		}
+		.male{
+			color: rgba(255,255,255,0.2);
+		}
+		.female{
+			color: rgba(255,255,255,0.2);
+		}
+		.msg{    margin-left: 20px;font-size: 20px !important;    position: relative;
+    top: -7px;
+		}
+		#main{bottom: 0px;overflow: auto;
+			height: 100%;width:100%;position: fixed;top:40px;left:0px;background-image:url(https://static.zerochan.net/Clear.%28DMMd%29.full.1072329.jpg);background-size: cover;
+		}
+		#mainBox{
+			height: 100%;width:100%;position: fixed;top:0px;left:0px;bottom: 0px;
+		}
+		.time{
+			color: rgba(255,255,255,0.2);font-size:14px;display: inline-block;float: right;position: relative;top: 33px;
+		}
+
+		.name,.gender{
+			color: rgba(255,255,255,0.2) !important;font-size:13px;display: inline-block;float: right;position: relative;top: 95px;right: 110px;
+		}
+		.name,.gender,.msg,.avatar{
+			vertical-align: middle;
+		}
+		#gender,#avatar,#namecolor,#msgcolor{
+			color: rgba(255,255,255,0.5);
+		}
+		hr{border:0px solid transparent;
+			border-top:1px solid rgba(255,255,255,0.05);
+		}
+		.thumb{
+			height:40px;position: absolute;left: 0px;top: 0px;margin: 0;
+		}
+		#userList{box-shadow:0px 0px 10px rgba(0, 0, 0, 0.3);
+			background-color:rgba(255,255,255,0.04);
+			overflow: auto;
+			position: fixed;
+			right:0px;
+			top:40px;
+			bottom: 0px;
+			width: 200px;margin: 0;
+		}
+		.uname{color:rgba(255,255,255,0.4) !important;}
+		.uavatar,.uavatarme{
+			max-width: 50px;
+			max-height:50px;
+			vertical-align: middle;
+			border-radius: 300px;
+		}
+		.users{border-radius:4px;}
+*::-webkit-scrollbar{width:0px;height:0px;border:0px;background:transparent;}
+	</style>
+	<script src='../jquery.js'></script>
+	<script src='../jquery.cookie.js'></script>
+</head>
+<body style="background:#000;color:white;height:100%;width:100%;">
+<div class="bottomBar" style="position:fixed;bottom:0px;width:100%;height:32px;background:#111;z-index:9999;left:0px;margin:0px;text-align:right !important;box-shadow:0px 1px 2px rgba(0, 0, 0, 0.3);"><input type="text" id="name" placeholder="名字"><input type="text" id="gender" placeholder="性别数字 1:男 2:女"><input type="text" id="avatar" placeholder="头像链接"><input type="text" id="namecolor" placeholder="名字颜色" style="display:none;"><input type="text" id="msgcolor" placeholder="消息颜色"><button id="exit">退出</button>
+</div>
+<center class="mainBox">
+<div style="background:#111;margin: 0px;position: fixed;width: 100%;top: 0px;left: 0px;box-shadow:0px 1px 2px rgba(0, 0, 0, 0.3);z-index: 9999;">
+<img class="thumb">
+<input type="text" id="msg" onkeydown="if(event.keyCode==13){submit.click();}" placeholder="说点什么..." style="width:100%;height:36px;font-size:18px;padding-left:60px;margin:0px;">
+<button id="submit" style="height:40px;position:absolute;right:0px;top:0px;margin:0;">发送</button>
+</div>
+<div id="main" style="margin:0px;padding-top: 30px;overflow-x:hidden;">
+<div style="background-color:rgba(0,0,0,0.7);height:100%;width:100%;position:fixed;top:0px;left:0px;margin:0px;z-index:-1111;"></div>
+</div>
+<div id="userList">
+</div>
+<div id="nullBox" style="display:none;"></div>
+</center>
+<audio src="../msg.mp3" id="msgSound" style="display:none;"></audio>
+<script>
+	$.ajaxSetup({cache:false});
+	var msgSound=$('#msgSound')[0];
+	var msg=$('#msg');
+	var thumb=$('.thumb');
+	var submit=$('#submit');
+	var exit=$('#exit');
+	var main=$('#main');
+	var thumbme=$('#nullBox');
+	var userList=$('#userList');
+	var msgNum='f';
+	var getMsgClock;
+	var room=0;
+	var struct={name:'name',gender:'gender',avatar:'avatar',msg:'msg',namecolor:'namecolor',msgcolor:'msgcolor'};
+	for(var i in struct){
+		eval("var "+i+"1=$('#"+i+"')");
+	}
+	function changeColor(){
+		name1.css('color',namecolor1.val());
+		msg1.css('color',msgcolor1.val());
+		thumb.attr('src',avatar1.val());
+		thumbme.attr('src',avatar1.val());
+	}
+	if($.cookie('name')){
+		for(var i in struct){
+			eval(i+"1.val($.cookie(i))");
+		}
+		changeColor();
+	}
+	exit.click(function(){
+		getMsg(false,false,true);
+	});
+	function getlist(ini,exit){
+		if(ini){
+			var Json={room:room,name:name1.val(),gender:gender1.val(),namecolor:namecolor1.val(),avatar:avatar1.val()};
+		}else if(exit){
+			var Json={room:room,name:name1.val(),exit:1};
+		}else{
+			var Json={room:room};
+		}
+		$.post('../room.php',Json,function(result){
+			if(exit){
+				location='../';
+				return;
+			}
+			if(result==''){return;}
+			if(result=='mysql error'){alert('mysql error');return;}
+			eval('var json='+result);
+			var json2={};
+			var str='';
+			for(var i in json){
+				json2=json[i];
+				var str2='';
+				for(var j in json2){
+					if(j=='msgcolor' || j=='namecolor'){continue;}
+					if(j=='avatar'){
+						str2+='<img class="u'+j+(json2['name']==name1.val()?'me':'')+'" src="'+json2[j]+'">';
+						continue;
+					}else if(j=='gender'){
+						// str2+='<b class="u'+j+' '+(json2[j]==1?'male':'female')+'">'+(json2[j]==1?'♂':'♀')+'</b>';
+						continue;
+					}else if(j=='name'){
+						str2+='<b class="u'+j+'" style="color:'+json2['namecolor']+';">'+json2[j]+'</b>';
+						continue;
+					}
+					str2+='<div class="u'+j+'">'+json2[j]+'</div>';
+				}
+					str+='<div class="users">'+str2+'</div>';
+			}
+			userList.html(str);
+			if(ini){
+				thumbme=('#uavatarme');
+			}
+	});
+	}
+	function getMsg(submit,ini,exit){
+		clearInterval(getMsgClock);
+		if(submit){
+			var Json={num:msgNum,room:room};
+			for(var i in struct){
+				Json[i]=eval(i+'1.val()');
+			}
+			msg1.val('');
+		}else if(ini){
+			var Json={num:msgNum,room:room,name:'系统娘',gender:2,avatar:'https://i.loli.net/2017/09/16/59bcb56a9c269.png',msg:name1.val()+' [ '+(gender1.val()==1?'♂':'♀')+' ] 加入了聊天室',namecolor:'rgba(255,255,255,0.5)',msgcolor:'rgba(255,255,255,0.5)'};
+		}else if(exit){
+			var Json={num:msgNum,room:room,name:'系统娘',gender:2,avatar:'https://i.loli.net/2017/09/16/59bcb56a9c269.png',msg:name1.val()+' [ '+(gender1.val()==1?'♂':'♀')+' ] 离开了聊天室',namecolor:'rgba(255,255,255,0.5)',msgcolor:'rgba(255,255,255,0.5)'};
+		}else{
+			var Json={num:msgNum,room:room};
+		}
+		$.post('../msg.php',Json,function(result){
+			clearInterval(getMsgClock);
+			getMsgClock=setInterval('getMsg()',3000);
+			if(result==''){return;}
+			if(result=='mysql error'){alert('mysql error');return;}
+			if(result.indexOf('系统娘')>-1){
+				if(ini){getlist(true);}else{getlist();}
+			}
+			eval('var json='+result);
+			var json2={};
+			for(var i in json){
+				if(i=='msgnum'){msgNum=json[i];continue;}
+				json2=json[i];
+				var str2='';
+				for(var j in json2){
+					if(j=='msgcolor' || j=='namecolor'){continue;}
+					if(j=='avatar'){
+						str2+='<img class="'+j+'" src="'+json2[j]+'">';
+						continue;
+					}else if(j=='gender'){
+						str2+='<b class="'+j+' '+(json2[j]==1?'male':'female')+'">'+(json2[j]==1?'♂':'♀')+'</b>';
+						continue;
+					}else if(j=='name'){
+						str2+='<b class="'+j+'" style="color:'+json2['namecolor']+';">'+json2[j]+'</b>';
+						continue;
+					}else if(j=='msg'){
+						str2+='<br><br><b class="'+j+'" style="color:'+json2['msgcolor']+';">'+json2[j]+'</b>';
+						continue;
+					}
+					str2+='<br><b class="'+j+'">'+json2[j]+'</b>';
+				}
+				if(ini){
+					main.append('<div class="msgBox"><div class="msgBoxChild">'+str2+'</div></div>');
+				}else{
+					main.prepend('<div class="msgBox"><div class="msgBoxChild">'+str2+'</div></div>');
+				}
+			}
+			if(exit){
+				getlist(false,true);
+			}
+			if(!ini && !submit){
+				msgSound.play();
+			}
+		});
+	}
+	submit.click(function(){
+		if(msg1.val()==''){return;}
+		getMsg(true);
+		for(var i in struct){
+			if(i=='msg'){continue;}
+			eval('$.cookie(i,'+i+'1.val(),{expires:365,path:"/"})');
+		}
+		changeColor();
+	});
+	getMsg(false,true);
+</script>
+</body>
+</html>
