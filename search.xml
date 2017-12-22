@@ -48,23 +48,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Node.js 实现花园自动发弹幕😂（终极巨坑）]]></title>
-      <url>/2017/09/10/iirose-nodejs/</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>利用node.js链接socket实现自动请求一言api定时花园发弹幕</p>
-<h2 id="需要"><a href="#需要" class="headerlink" title="需要"></a>需要</h2><p>api:<a href="https://savegirls.club" target="_blank" rel="external">https://savegirls.club</a><br>node.js<br>socket</p>
-<h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><p>目前目标使用node.js连接socket</p>
-]]></content>
-      
-        <categories>
-            
-            <category> 折腾记 </category>
-            
-        </categories>
-        
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[一言 API]]></title>
       <url>/2017/09/09/api/</url>
       <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><h2 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h2><p></p><p id="hitokoto"></p><p></p>
