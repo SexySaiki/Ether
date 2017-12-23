@@ -100,9 +100,9 @@
   
     
     <entry>
-      <title><![CDATA[一个简单的友联页面]]></title>
+      <title><![CDATA[links]]></title>
       <url>/links/index.html</url>
-      <content type="html"></content>
+      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script>]]></content>
     </entry>
     
     <entry>
