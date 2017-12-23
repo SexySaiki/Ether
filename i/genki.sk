@@ -1,0 +1,64 @@
+原版谷歌BBR优化
+wget -N --no-check-certificate https://kilin.moe/i/bbr.sh && chmod +x bbr.sh && bash bbr.sh
+魔改BBR
+wget -N --no-check-certificate https://kilin.moe/i/ykbbr.sh && chmod +x ykbbr.sh && bash ykbbr.sh
+
+SS Debian9安装
+sudo sh -c 'printf "deb http://deb.debian.org/debian stretch-backports main" > /etc/apt/sources.list.d/stretch-backports.list' && sudo apt update && sudo apt -t stretch-backports install shadowsocks-libev -
+
+SS Fedora安装
+su -c 'dnf copr enable librehat/shadowsocks' && su -c 'dnf update' && su -c 'dnf install shadowsocks-libev'
+
+SS Centos安装
+cd /etc/yum.repos.d/ && wget https://copr.fedorainfracloud.org/coprs/librehat/shadowsocks/repo/epel-7/librehat-shadowsocks-epel-7.repo && su -c 'yum update' && su -c 'yum install shadowsocks-libev'
+kilin:cd /etc/yum.repos.d/ && wget https://kilin.moe/i/librehat-shadowsocks-epel-7.repo && su -c 'yum update' && su -c 'yum install shadowsocks-libev'
+
+宝塔安装
+Centos安装命令：
+yum install -y wget && wget -O install.sh http://download.bt.cn/install/install.sh && sh install.sh
+Ubuntu/Deepin安装命令：
+wget -O install.sh http://download.bt.cn/install/install-ubuntu.sh && sudo bash install.sh
+Debian安装命令：
+wget -O install.sh http://download.bt.cn/install/install-ubuntu.sh && bash install.sh
+Fedora安装命令:
+wget -O install.sh http://download.bt.cn/install/install.sh && bash install.sh
+
+重启SS
+service shadowsocks-libev restart
+
+日本服务器
+https://manage.conoha.jp/Dashboard
+i@kilin.moe Yx0102050
+
+搬瓦工
+https://bwh1.net/
+i@kilin.moe yx0205
+
+VPS77
+vps77.com
+echo@h.fo yx0205
+面板 de.vps77.com web2242 yx0205
+
+阿里云
+aliyun.com
+
+ip记录
+搬瓦工
+172.96.193.119:27016
+172.96.215.140:28774
+日本
+163.44.175.206
+德国
+185.194.239.13
+中国
+119.23.214.111
+
+SS配置
+{
+    "server":"服务器IP",
+    "server_port":54188,
+    "local_port":1080,
+    "password":"yx0205",
+    "timeout":60,
+    "method":"salsa20"
+}
