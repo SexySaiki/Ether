@@ -3,6 +3,29 @@
   
     
     <entry>
+      <title><![CDATA[日常的折腾更新]]></title>
+      <url>/2018/01/07/%E5%90%84%E7%A7%8D%E5%B0%8F%E6%9B%B4%E6%96%B0/</url>
+      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><h3 id="API"><a href="#API" class="headerlink" title="API"></a>API</h3><p>已经新增洛杉矶CN2节点<br>（过段时间将句子怼到500条</p>
+<h3 id="Live2d"><a href="#Live2d" class="headerlink" title="Live2d"></a>Live2d</h3><p>博客左下角多了一个会动的小人2333</p>
+<h4 id="修正部分已知BUG"><a href="#修正部分已知BUG" class="headerlink" title="修正部分已知BUG"></a>修正部分已知BUG</h4><h5 id="又水了一文（还有很多改动，想不起来了2333"><a href="#又水了一文（还有很多改动，想不起来了2333" class="headerlink" title="又水了一文（还有很多改动，想不起来了2333"></a>又水了一文（还有很多改动，想不起来了2333</h5><h3 id="egg"><a href="#egg" class="headerlink" title="egg"></a>egg</h3><p><img src="https://source.kilin.moe/p/egg/1/5.webp" alt="后来发现蓝翔也不错"></p>
+]]></content>
+      
+        <categories>
+            
+            <category> 折腾记 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 更新 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[失踪人口回归]]></title>
       <url>/2018/01/07/%E5%A4%B1%E8%B8%AA%E4%BA%BA%E5%8F%A3%E5%9B%9E%E5%BD%92/</url>
       <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>好久不见，甚是想念<br><del>想念是不可能的，这辈子都不可能想念的<del><br>咳咳，某位失踪很久的人，突然想起来应该写一篇文章了</del></del></p>
@@ -89,7 +112,7 @@
       <url>/2017/09/09/api/</url>
       <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><h2 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h2><p></p><p id="hitokoto"></p><p></p>
 <h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>简单来说这个api的作用就是提供一句话服务。<br>我这个api主要是提供一些在动漫里和小说里我觉得好的东西。<br>句子一直都会反复筛选的，毕竟我也是一个有点强迫症的人</p>
-<h2 id="Api"><a href="#Api" class="headerlink" title="Api"></a>Api</h2><p><a href="https://hitokoto.kilin.moe/" target="_blank" rel="external">https://hitokoto.kilin.moe/</a></p>
+<h2 id="Api"><a href="#Api" class="headerlink" title="Api"></a>Api</h2><p>国内阿里云:<a href="https://hitokoto.kilin.moe/" target="_blank" rel="external">https://hitokoto.kilin.moe/</a><br>洛杉矶cn2:<a href="http://hcn2.kilin.moe/" target="_blank" rel="external">http://hcn2.kilin.moe/</a></p>
 <h2 id="返回"><a href="#返回" class="headerlink" title="返回"></a>返回</h2><p>返回参数名称（描述）<br>word（本体，一句话）<br>author（作者）<br>source（出处）<br>type（类别）</p>
 <h3 id="egg"><a href="#egg" class="headerlink" title="egg"></a>egg</h3><p><img src="https://source.kilin.moe/p/egg/1/1.webp" alt="人的想法是会变的"></p>
 ]]></content>
