@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kilin.moe/"/>
-  <updated>2018-01-06T19:09:20.554Z</updated>
+  <updated>2018-01-06T19:10:02.805Z</updated>
   <id>https://kilin.moe/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://kilin.moe/2018/01/07/%E5%A4%B1%E8%B8%AA%E4%BA%BA%E5%8F%A3%E5%9B%9E%E5%BD%92/"/>
     <id>https://kilin.moe/2018/01/07/失踪人口回归/</id>
     <published>2018-01-06T18:14:25.000Z</published>
-    <updated>2018-01-06T19:09:20.554Z</updated>
+    <updated>2018-01-06T19:10:02.805Z</updated>
     
-    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>好久不见，甚是想念<br><del>想念是不可能的，这辈子都不可能想念的<del><br>咳咳，某位失踪很久的人，突然想起来应该写一篇文章了</del></del></p><h3 id="最近变化"><a href="#最近变化" class="headerlink" title="最近变化"></a>最近变化</h3><p>这个话题，哈哈哈<br>先说博客的变化吧!</p><ol><li>托管至Github！</li><li>全局使用WebP</li><li>去除评论</li><li>去除失效友链</li></ol><h4 id="托管至Github"><a href="#托管至Github" class="headerlink" title="托管至Github"></a>托管至Github</h4><p><del>这个，绝对不是我没钱了！绝对不是！<del><br>阿里云的服务器确实，真真切切也没到期，所以真的不是没钱了（你手上有钱才怪），之所以托管至Github，还是为了稳定的页面服务，最近阿里云的服务器被我用来做一些实验（怎奈何我只有一台国内服务器），为了不崩博客，我决定迁移至Github，还好Hexo全静态，迁移起来也不是很费劲Σ(っ °Д °;)っ</del></del></p><h4 id="全局使用WebP"><a href="#全局使用WebP" class="headerlink" title="全局使用WebP"></a>全局使用WebP</h4><p>别说，WebP是真的好用，自从接触到这个格式之后我就成功吸毒了。</p><h4 id="去除评论"><a href="#去除评论" class="headerlink" title="去除评论"></a>去除评论</h4><p>主要还是因为之前用的那个各种不舒服，强迫症感觉真的不搭，所以想了想也去除了（等我有时间的时候代理Disqus吧</p><h4 id="去除失效友链"><a href="#去除失效友链" class="headerlink" title="去除失效友链"></a>去除失效友链</h4><p>无聊的时候翻了翻，卧槽，友链怎么好多都挂了（一部分站点也取消了本站友链</p><h3 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h3><p>2018终究还是来了，讲道理，作为一个高二学生，真的一点变化都没有，日子还是要接着过，你说对吧</p><h3 id="计划"><a href="#计划" class="headerlink" title="计划"></a>计划</h3><p>这个，要不变成一个现充博客吧<em>（我是真的想当现充啊！</em></p><h3 id="egg"><a href="#egg" class="headerlink" title="egg"></a>egg</h3><p><img src="https://source.kilin.moe/p/egg/1/4.webp" alt="小的时候想着上清华还是上北大"></p>]]></content>
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>好久不见，甚是想念<br><del>想念是不可能的，这辈子都不可能想念的<del><br>咳咳，某位失踪很久的人，突然想起来应该写一篇文章了</del></del></p><h3 id="最近变化"><a href="#最近变化" class="headerlink" title="最近变化"></a>最近变化</h3><p>这个话题，哈哈哈<br>先说博客的变化吧!</p><ol><li>托管至Github！</li><li>全局使用WebP</li><li>去除评论</li><li>去除失效友链</li></ol><h4 id="托管至Github"><a href="#托管至Github" class="headerlink" title="托管至Github"></a>托管至Github</h4><p><del>这个，绝对不是我没钱了！绝对不是！</del><br>阿里云的服务器确实，真真切切也没到期，所以真的不是没钱了（你手上有钱才怪），之所以托管至Github，还是为了稳定的页面服务，最近阿里云的服务器被我用来做一些实验（怎奈何我只有一台国内服务器），为了不崩博客，我决定迁移至Github，还好Hexo全静态，迁移起来也不是很费劲Σ(っ °Д °;)っ</p><h4 id="全局使用WebP"><a href="#全局使用WebP" class="headerlink" title="全局使用WebP"></a>全局使用WebP</h4><p>别说，WebP是真的好用，自从接触到这个格式之后我就成功吸毒了。</p><h4 id="去除评论"><a href="#去除评论" class="headerlink" title="去除评论"></a>去除评论</h4><p>主要还是因为之前用的那个各种不舒服，强迫症感觉真的不搭，所以想了想也去除了（等我有时间的时候代理Disqus吧</p><h4 id="去除失效友链"><a href="#去除失效友链" class="headerlink" title="去除失效友链"></a>去除失效友链</h4><p>无聊的时候翻了翻，卧槽，友链怎么好多都挂了（一部分站点也取消了本站友链</p><h3 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h3><p>2018终究还是来了，讲道理，作为一个高二学生，真的一点变化都没有，日子还是要接着过，你说对吧</p><h3 id="计划"><a href="#计划" class="headerlink" title="计划"></a>计划</h3><p>这个，要不变成一个现充博客吧<em>（我是真的想当现充啊！</em></p><h3 id="egg"><a href="#egg" class="headerlink" title="egg"></a>egg</h3><p><img src="https://source.kilin.moe/p/egg/1/4.webp" alt="小的时候想着上清华还是上北大"></p>]]></content>
     
     <summary type="html">
     
