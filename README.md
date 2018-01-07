@@ -1,5 +1,5 @@
-# Ether
 ![Ether Logo](https://source.kilin.moe/w/icon.webp)
+# Ether
 这里是托管我[博客](https://kilin.moe)的地方
 人嘛，总要有点记录，总要写点东西，然后……就想着做个博客
 ### 波澜
