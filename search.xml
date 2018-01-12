@@ -3,6 +3,35 @@
   
     
     <entry>
+      <title><![CDATA[一言 API]]></title>
+      <url>/2018/01/13/api/</url>
+      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><h2 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h2><p></p><p id="hitokoto"></p><p></p>
+<h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><p>这里是一个小小的预览网页<br><a href="https://kilin.moe/h">DEMP</a></p>
+<h3 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h3><blockquote>
+<p>2018年1月13日 00点48分<br>添加83条新句子（诈尸更新</p>
+<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>简单来说这个api的作用就是提供一句话服务。<br>我这个api主要是提供一些在动漫里和小说里我觉得好的东西。<br>句子一直都会反复筛选的，毕竟我也是一个有点强迫症的人</p>
+<h2 id="Api"><a href="#Api" class="headerlink" title="Api"></a>Api</h2><p>国内阿里云:<a href="https://api.kilin.moe/" target="_blank" rel="external">https://api.kilin.moe/</a><br>洛杉矶cn2:<a href="http://hcn2.kilin.moe/" target="_blank" rel="external">http://hcn2.kilin.moe/</a></p>
+<h2 id="返回"><a href="#返回" class="headerlink" title="返回"></a>返回</h2><p>返回参数名称（描述）<br>word（本体，一句话）<br>author（作者）<br>source（出处）<br>type（类别）</p>
+<h3 id="egg"><a href="#egg" class="headerlink" title="egg"></a>egg</h3><p><img src="https://source.kilin.moe/p/egg/1/1.webp" alt="人的想法是会变的"></p>
+</blockquote>
+]]></content>
+      
+        <categories>
+            
+            <category> 折腾记 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> API </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[日常的折腾更新]]></title>
       <url>/2018/01/07/%E5%90%84%E7%A7%8D%E5%B0%8F%E6%9B%B4%E6%96%B0/</url>
       <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><h3 id="API"><a href="#API" class="headerlink" title="API"></a>API</h3><p>已经新增洛杉矶CN2节点<br>（过段时间将句子怼到500条</p>
@@ -107,32 +136,6 @@
             
         </categories>
         
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[一言 API]]></title>
-      <url>/2017/09/09/api/</url>
-      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><h2 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h2><p></p><p id="hitokoto"></p><p></p>
-<h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><p>这里是一个小小的预览网页<br><a href="https://kilin.moe/h">DEMP</a></p>
-<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>简单来说这个api的作用就是提供一句话服务。<br>我这个api主要是提供一些在动漫里和小说里我觉得好的东西。<br>句子一直都会反复筛选的，毕竟我也是一个有点强迫症的人</p>
-<h2 id="Api"><a href="#Api" class="headerlink" title="Api"></a>Api</h2><p>国内阿里云:<a href="https://api.kilin.moe/" target="_blank" rel="external">https://api.kilin.moe/</a><br>洛杉矶cn2:<a href="http://hcn2.kilin.moe/" target="_blank" rel="external">http://hcn2.kilin.moe/</a></p>
-<h2 id="返回"><a href="#返回" class="headerlink" title="返回"></a>返回</h2><p>返回参数名称（描述）<br>word（本体，一句话）<br>author（作者）<br>source（出处）<br>type（类别）</p>
-<h3 id="egg"><a href="#egg" class="headerlink" title="egg"></a>egg</h3><p><img src="https://source.kilin.moe/p/egg/1/1.webp" alt="人的想法是会变的"></p>
-]]></content>
-      
-        <categories>
-            
-            <category> 折腾记 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> API </tag>
-            
-        </tags>
         
     </entry>
     
