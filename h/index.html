@@ -1,0 +1,12 @@
+<title>Hitokoto Demo</title>
+<h1><b id="hitokoto"></b></h1>
+<script>
+var ajax = new XMLHttpRequest();  ajax.open('GET', 'https://api.kilin.moe/');     
+ajax.onreadystatechange = function() { 
+        if (ajax.readyState == 4) {
+                     if (ajax.status == 200) {
+                                      var result = JSON.parse(ajax.responseText);
+  document.getElementById('hitokoto').innerHTML='<p style="text-align: left;">'+result.word+'</p>'+' <p style="text-align: right;">— '+result.author+'《'+result.source+'》</p>';
+// document.write('句子:'+result.word+'<br>作者:'+result.author+'<br>出处:'+result.source+'<br>类别:'+result.type);
+}}};ajax.send();
+</script>
