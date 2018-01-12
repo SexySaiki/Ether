@@ -122,9 +122,9 @@
     <link href="https://kilin.moe/2017/09/09/api/"/>
     <id>https://kilin.moe/2017/09/09/api/</id>
     <published>2017-09-09T15:40:47.000Z</published>
-    <updated>2018-01-06T20:12:28.686Z</updated>
+    <updated>2018-01-12T16:46:25.373Z</updated>
     
-    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><h2 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h2><p></p><p id="hitokoto"></p><p></p><h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>简单来说这个api的作用就是提供一句话服务。<br>我这个api主要是提供一些在动漫里和小说里我觉得好的东西。<br>句子一直都会反复筛选的，毕竟我也是一个有点强迫症的人</p><h2 id="Api"><a href="#Api" class="headerlink" title="Api"></a>Api</h2><p>国内阿里云:<a href="https://api.kilin.moe/" target="_blank" rel="external">https://api.kilin.moe/</a><br>洛杉矶cn2:<a href="http://hcn2.kilin.moe/" target="_blank" rel="external">http://hcn2.kilin.moe/</a></p><h2 id="返回"><a href="#返回" class="headerlink" title="返回"></a>返回</h2><p>返回参数名称（描述）<br>word（本体，一句话）<br>author（作者）<br>source（出处）<br>type（类别）</p><h3 id="egg"><a href="#egg" class="headerlink" title="egg"></a>egg</h3><p><img src="https://source.kilin.moe/p/egg/1/1.webp" alt="人的想法是会变的"></p>]]></content>
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><h2 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h2><p></p><p id="hitokoto"></p><p></p><h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><p>这里是一个小小的预览网页<br><a href="https://kilin.moe/h">DEMP</a></p><h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>简单来说这个api的作用就是提供一句话服务。<br>我这个api主要是提供一些在动漫里和小说里我觉得好的东西。<br>句子一直都会反复筛选的，毕竟我也是一个有点强迫症的人</p><h2 id="Api"><a href="#Api" class="headerlink" title="Api"></a>Api</h2><p>国内阿里云:<a href="https://api.kilin.moe/" target="_blank" rel="external">https://api.kilin.moe/</a><br>洛杉矶cn2:<a href="http://hcn2.kilin.moe/" target="_blank" rel="external">http://hcn2.kilin.moe/</a></p><h2 id="返回"><a href="#返回" class="headerlink" title="返回"></a>返回</h2><p>返回参数名称（描述）<br>word（本体，一句话）<br>author（作者）<br>source（出处）<br>type（类别）</p><h3 id="egg"><a href="#egg" class="headerlink" title="egg"></a>egg</h3><p><img src="https://source.kilin.moe/p/egg/1/1.webp" alt="人的想法是会变的"></p>]]></content>
     
     <summary type="html">
     
