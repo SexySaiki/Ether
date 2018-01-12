@@ -169,8 +169,20 @@
   
     
     <entry>
+      <title><![CDATA[Links]]></title>
+      <url>/links/index.html</url>
+      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Gallery]]></title>
+      <url>/gallery/index.html</url>
+      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script>]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[留言板]]></title>
-      <url>/board/index.html</url>
+      <url>/about/index.html</url>
       <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><h4 id="日常乱用一言🤔"><a href="#日常乱用一言🤔" class="headerlink" title="日常乱用一言🤔"></a>日常乱用一言🤔</h4><p></p><p id="hitokoto"></p><p></p>
 <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>欢迎来到这里，这是一个特别小又简单的小站…<br>我是个高二学生党，这是一个阿里云的小水管服务器…<br>大家可以打开侧边栏发现我的一些小应用(有人访问我就特别高兴了…</p>
 <h2 id="欢迎大佬们的PY"><a href="#欢迎大佬们的PY" class="headerlink" title="欢迎大佬们的PY"></a>欢迎大佬们的PY</h2><p>这里并没有很多的拘束…<br>如果要交换友链你们发邮件就好了🙄</p>
@@ -185,8 +197,14 @@
     </entry>
     
     <entry>
-      <title><![CDATA[links]]></title>
-      <url>/links/index.html</url>
+      <title><![CDATA[Timeline]]></title>
+      <url>/timeline/index.html</url>
+      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Tags]]></title>
+      <url>/tags/index.html</url>
       <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script>]]></content>
     </entry>
     
