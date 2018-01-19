@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Hitokoto Demo</title>
+	<link rel="icon" href="https://source.kilin.moe/w/icon.webp">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/materialize/1.0.0-alpha.3/css/materialize.min.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+    body{
+    	background: url("https://api.ikmoe.com/moeu-rand-background.php") no-repeat center top #EEE5DE;
+    }
+	</style>
+  </head>
+  <body>
+    <audio autoplay="autoplay"><source src="https://music.kirito.moe/random-music-api.php" type="audio/mpeg" /></audio>
+  	<div class="container">
+  		<h1 style="text-shadow: 1px 2px 1px #000000;color: #FEFEFE;">Hitokoto</h1>
+  		<div class="col s12 m8 offset-m2 l6 offset-l3">
+        	<div class="card-panel grey lighten-5 z-depth-1">
+            	<div class="col s10">
+              		<span class="black-text" id="hitokoto">
+               			🍔 Hitokoto 正在奋力加载中(ง •_•)ง...
+              		</span>
+          		</div>
+     		</div>
+		</div>
+		<div style="text-align: right;">
+        	<a href="https://kilin.moe/2018/01/13/api/" class="btn-floating btn-large scale-transition red lighten-1 pulse">
+   				<i class="material-icons">favorite</i>
+    		</a>
+    	</div>
+	</div>
+	<!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="https://cdn.bootcss.com/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
+	<script>
+	var ajax = new XMLHttpRequest();  ajax.open('GET', 'https://api.kilin.moe/');     
+	ajax.onreadystatechange = function() { 
+  		    if (ajax.readyState == 4) {
+    		               if (ajax.status == 200) {
+                                var result = JSON.parse(ajax.responseText);
+  	document.getElementById('hitokoto').innerHTML='<p style="text-align: left;">'+result.word+'</p>'+' <p style="text-align: right;">— '+result.author+'《'+result.source+'》</p>';
+	// document.write('句子:'+result.word+'<br>作者:'+result.author+'<br>出处:'+result.source+'<br>类别:'+result.type);
+	}}};ajax.send();
+	</script>
+  </body>
+</html>
+
