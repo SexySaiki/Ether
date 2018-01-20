@@ -439,6 +439,20 @@
 <p>名称：靥<br>网址：<a href="https://kilin.moe/">https://kilin.moe/</a><br>简介：一个简单，简单，简单的小站…<br>LOGO：<a href="https://source.kilin.moe/w/icon.webp" target="_blank" rel="external">https://source.kilin.moe/w/icon.webp</a></p>
 </blockquote>
 
+      <script>
+        window.disqusProxy={
+          shortname: 'kilinz',
+          username: 'Genki',
+          server: 'kamisama.shop',
+          port: 5509,
+          adminAvatar: '/avatars/admin-avatar.jpg',
+          identifier: 'about/index.html',
+        };
+        window.disqus_config = function () {
+          this.page.url = window.location.href;
+          this.page.identifier = window.disqusProxy.identifier;
+        };
+      </script>
         
     
 
@@ -451,6 +465,35 @@
                 <!-- Post Comments -->
                 
                     
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'https://kilin.moe/about/index.html';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://kilin.moe/about/index.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//kilinz.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
                 
             </div>
 
@@ -854,6 +897,9 @@ ajax.onreadystatechange = function() {
 
 
 
+
+   <!-- 使用 DISQUS js 代码 -->
+<script id="dsq-count-scr" src="//kilinz.disqus.com/count.js" async></script>
 
 
 
