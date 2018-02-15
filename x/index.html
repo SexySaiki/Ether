@@ -18,30 +18,40 @@
     </head>
 
     <body>
+      <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!">一</a></li>
+      <li><a href="#!">二</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">三</a></li>
+      </ul>
+      <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper">
-          <ul class="right">
-            <li><a href=""><i class="material-icons left">cloud</i> </a></li>
+          <ul class="left">
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons right">settings_ethernet</i></a></li>
+          </ul>
+          <ul class="right waves-effect">
             <li><a href=""><i class="material-icons left">autorenew</i><span class="new badge">4</span></a></li>
           </ul>
         </div>
       </nav>
+      </div>
       <div class="fixed-action-btn horizontal click-to-toggle">
-        <a class="btn-floating btn-large red">
+        <a class="btn-floating btn-large waves-effect red">
           <i class="material-icons">menu</i>
         </a>
         <ul>
-          <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-          <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-          <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-          <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+          <li><a class="btn-floating red waves-effect"><i class="material-icons">insert_chart</i></a></li>
+          <li><a class="btn-floating yellow darken-1 waves-effect"><i class="material-icons">format_quote</i></a></li>
+          <li><a class="btn-floating green waves-effect"><i class="material-icons">publish</i></a></li>
+          <li><a class="btn-floating blue waves-effect"><i class="material-icons">attach_file</i></a></li>
         </ul>
       </div>
       <div class="row">
         <div class="col s12 m7">
           <div class="card">
             <div class="card-image">
-                <img src="https://api.ikmoe.com/moeu-rand-background.php">
+                <img class="materialboxed" src="https://api.ikmoe.com/moeu-rand-background.php">
             </div>
             <div class="card-stacked">
               <div class="card-content">
@@ -55,19 +65,19 @@
         </div>
         <div class="col s12 m5">
           <div class="card-panel red">
-              <span class="white-text">这里是一个简单记录的面板。
+              <span class="white-text">无限填坑的网页
               </span>
           </div>
         </div>
         <div class="col s12 m6">
-          <div class="card blue-grey darken-1">
+          <div class="card blue-grey darken-4">
             <div class="card-content white-text">
-              <span class="card-title">卡片标题</span>
-              <p>我是一个很简单的卡片。我很擅长于包含少量的信息。我很方便，因为我只需要一个小标记就可以有效地使用。</p>
+              <span class="card-title">YOURS</span>
+              <p>身边总有那么几个有趣而又恐怖的小可爱。</p>
             </div>
             <div class="card-action">
-              <a href="#">这是一个链接</a>
-              <a href="#">这是一个链接</a>
+              <a href="#" onclick="Materialize.toast('这是一个Toasts🐷', 4000)">Toasts</a>
+              <a href="#">Link</a>
             </div>
           </div>
         </div>
